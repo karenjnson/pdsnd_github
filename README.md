@@ -26,3 +26,7 @@ This project provides Bikeshare Analysis for a specific city
 1. Resources:
         * https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.idxmin.html
         * YouTube Videos: https://www.youtube.com/watch?v=2AFGPdNn4FM
+
+
+![We Love Bikeshare](/images/chicagoBikeshare.png)
+
