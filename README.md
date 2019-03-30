@@ -28,5 +28,10 @@ This project provides Bikeshare Analysis for a specific city
         * YouTube Videos: https://www.youtube.com/watch?v=2AFGPdNn4FM
 
 
+### Features/Updates Coming
+- [ ] Cleanup debug messages for consistency
+- [ ] Add ability to analyze other cities: currently supported chicago, washington dc, and new york 
+
+
 ![We Love Bikeshare](/images/chicagoBikeshare.png)
 
