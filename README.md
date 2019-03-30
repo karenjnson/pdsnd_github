@@ -20,8 +20,9 @@ This project provides Bikeshare Analysis for a specific city
         * Bikeshare Rider Stats:  Gender, DOB, & User Type
 
 ### Files used
-Include the files used
+1. Data File:  chicago.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+1. Resources:
+        * https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.idxmin.html
+        * YouTube Videos: https://www.youtube.com/watch?v=2AFGPdNn4FM
