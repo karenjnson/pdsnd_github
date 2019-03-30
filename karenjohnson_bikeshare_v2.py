@@ -17,6 +17,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 MONTH_DATA = ['january', 'february', 'march', 'april', 'may', 'june']
 DAY_DATA = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 ROWINCREMENT = 1000
+SPACESTOPAD = 5
 
 def get_filters():
     """
@@ -154,16 +155,16 @@ def time_stats(df):
     
     # TO DO: display the most common month
     common_month = df['monthb'].value_counts().idxmax()
-    print ("{} Most Frequent Month: {}".format((' '*5),common_month.title()))
+    print ("{} Most Frequent Month: {}".format((' '*SPACESTOPAD),common_month.title()))
 
     # TO DO: display the most common day of week
     common_week = df['day_of_week'].value_counts().idxmax()
-    print ("{} Most Frequent Day of the Week: {}".format((' '*5), common_week))
+    print ("{} Most Frequent Day of the Week: {}".format((' '*SPACESTOPAD), common_week))
 
 
     # TO DO: display the most common start hour
     common_starthour = df['hour'].value_counts().idxmax()
-    print ("{} Most Frequent Start Hour: {}".format((' '*5), common_starthour))
+    print ("{} Most Frequent Start Hour: {}".format((' '*SPACESTOPAD), common_starthour))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -178,19 +179,19 @@ def station_stats(df):
 
     # TO DO: display most commonly used start station
     common_startstation = df['Start Station'].value_counts().idxmax()
-    print ("{} Popular Start Station: {}".format((' '*5),common_startstation))
+    print ("{} Popular Start Station: {}".format((' '*SPACESTOPAD),common_startstation))
 
 
     # TO DO: display most commonly used end station
     #print (df['End Station'].value_counts().head(15))
     common_endstation = df['End Station'].value_counts().idxmax()
-    print ("{} Popular End Station: {}".format((' '*5), common_endstation))
+    print ("{} Popular End Station: {}".format((' '*SPACESTOPAD), common_endstation))
 
 
     # TO DO: display most frequent combination of start station and end station trip
     
     common_startend = df.groupby(['Start Station', 'End Station']).size().idxmax()
-    print ("{} Popular Start & End Station: {} and {}".format((' '*5), common_startend[0], common_startend[1]))
+    print ("{} Popular Start & End Station: {} and {}".format((' '*SPACESTOPAD), common_startend[0], common_startend[1]))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -207,10 +208,10 @@ def trip_duration_stats(df):
     #print (df.shape)
     # TO DO: display total travel time
     trip_duration = df['Trip Duration'].count()
-    print("{} Total Trip Duration: {} secs".format((' '*5), trip_duration))
+    print("{} Total Trip Duration: {} secs".format((' '*SPACESTOPAD), trip_duration))
 
     # TO DO: display mean travel time
-    print("{} Average Trip Duration: {} secs".format((' '*5), df['Trip Duration'].mean()))
+    print("{} Average Trip Duration: {} secs".format((' '*SPACESTOPAD), df['Trip Duration'].mean()))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
