@@ -1,3 +1,6 @@
+# Author:  Karen Johnson
+# Date:  02-2019
+
 import time
 import pandas as pd
 import calendar
