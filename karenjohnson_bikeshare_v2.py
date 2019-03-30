@@ -9,6 +9,7 @@ import calendar
 debug = 0
 debug2 = 0
 
+INVALID_INPUT = "Not a valid input: Please try again\n"
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -45,7 +46,7 @@ def get_filters():
             city = 'washington'
             break
         else: 
-            print ("Not a valid input: Please try again\n")
+            print (INVALID_INPUT)
                
     
     while True:
@@ -60,7 +61,7 @@ def get_filters():
         elif month in MONTH_DATA:
             break
         else:
-            print ("Not a valid input: Please try again\n")
+            print (INVALID_INPUT)
 
     while True:
         # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
@@ -73,7 +74,7 @@ def get_filters():
         elif day in DAY_DATA:
             break
         else:
-            print ("Not a valid input: Please try again\n")
+            print (INVALID_INPUT)
 
     print('-'*40)
     return city, month, day
