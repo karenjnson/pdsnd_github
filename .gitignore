@@ -1,1 +1,8 @@
+# Ignore all .csv files
+# - can be implemented with *.csv or
+# - listing each csv file:  chicago.csv, washington.csv, new_york_city.csv
+
 *.csv
+chicago.csv
+washington.csv
+new_york_city.csv
